@@ -14,9 +14,6 @@ namespace TestCSharp
             foreach (KeyValuePair<string, string> pair in draw) {
                 Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
             }
-            foreach (KeyValuePair<string, string> pair in draw) {
-                Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
-            }
         }
     }
 }

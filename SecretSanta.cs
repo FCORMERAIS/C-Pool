@@ -14,7 +14,6 @@ namespace CSharpDiscovery.Quest02
             foreach (var item in list)
             {
                 count= count+1;
-                Console.WriteLine(item);
             }
             for (int i = 0; i < count/2; i++)
             {
@@ -23,9 +22,6 @@ namespace CSharpDiscovery.Quest02
                 string b = list[rnd.Next()%(count-i*2-1)];
                 list.Remove(b);
                 dico.Add(a,b);
-            }
-            foreach (KeyValuePair<string, string> pair in dico) {
-                Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
             }
             return dico;
         }

@@ -12,6 +12,7 @@ namespace CSharpDiscovery.Quest02
                     res = i;
                 }
             }
+            if (res == 0) {return null;}
             return res;
         }
     }

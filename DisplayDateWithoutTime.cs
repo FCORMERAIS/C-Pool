@@ -6,7 +6,7 @@ namespace CSharpDiscovery.Quest02
     {
         public static string DisplayDateWithoutTime(DateTime date)
         {
-            return date.ToShortDateString();
+            return date.ToShortDateString() ;
         }
     }
 }

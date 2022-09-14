@@ -14,6 +14,7 @@ namespace CSharpDiscovery.Quest02
             foreach (var item in list)
             {
                 count= count+1;
+                Console.WriteLine(item);
             }
             for (int i = 0; i < count/2; i++)
             {

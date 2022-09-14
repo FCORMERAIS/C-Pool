@@ -24,6 +24,9 @@ namespace CSharpDiscovery.Quest02
                 list.Remove(b);
                 dico.Add(a,b);
             }
+            foreach (KeyValuePair<string, string> pair in dico) {
+                Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
+            }
             return dico;
         }
     }

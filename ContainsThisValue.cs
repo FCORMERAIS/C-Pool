@@ -4,13 +4,16 @@ namespace CSharpDiscovery.Quest02
     {
         public static bool ContainsThisValue(int[] tab, int value)
         {
-           foreach (var item in tab)
-           {
-            if (item == value)
+            if (tab.Length != 0)
             {
-                return true;
+                foreach (var item in tab)
+                {
+                    if (item == value)
+                    {
+                        return true;
+                    }
+                }
             }
-           }
            return false;
         }
     }

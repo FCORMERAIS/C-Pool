@@ -5,7 +5,7 @@ namespace CSharpDiscovery.Quest02
     {
         public static DateTime FromStringToDateTime(string dateStr)
         {
-            DateTime res = DateTime.Parse(dateStr);
+            DateTime res = DateTime.ParseExact(dateStr, "dd/MM/yyyy HH:mm", null);
             return res;
         }
     }

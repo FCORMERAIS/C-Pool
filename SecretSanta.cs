@@ -17,13 +17,10 @@ namespace CSharpDiscovery.Quest02
             }
             for (int i = 0; i < count/2; i++)
             {
-                Console.WriteLine(rnd.Next()%(int)(count/2));
                 string a = list[rnd.Next()%(int)(count-i*2)];
-                Console.WriteLine(a);
                 list.Remove(a);
                 string b = list[rnd.Next()%(count-i*2-1)];
                 list.Remove(b);
-                Console.WriteLine(b);
                 dico.Add(a,b);
             }
             return dico;

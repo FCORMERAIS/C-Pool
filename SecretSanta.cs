@@ -10,17 +10,23 @@ namespace CSharpDiscovery.Quest02
             Random rnd = new Random();
             Dictionary<string, string> dico = new Dictionary<string, string>();
             List<string> list = new List<string>(people);
+            List<string> list2 = new List<string>(people);
             int count = 0;
             foreach (var item in list)
             {
                 count= count+1;
             }
-            for (int i = 0; i < count/2; i++)
+            for (int i = 0; i < count; i++)
             {
-                string a = list[rnd.Next()%(int)(count-i*2)];
+                string a = list[rnd.Next()%(count-i)];
+                Console.WriteLine(i);
+                Console.WriteLine(a);
                 list.Remove(a);
-                string b = list[rnd.Next()%(count-i*2-1)];
-                list.Remove(b);
+                string b = list2[rnd.Next()%(count)];
+                while (b==a)
+                {
+                    b = list2[rnd.Next()%(count)];
+                }
                 dico.Add(a,b);
             }
             return dico;

@@ -24,7 +24,7 @@ namespace CSharpDiscovery.Quest03{
             return "https://www.google.com/maps/place/"+this.Name.Replace(" ", "+")+"/@"+this.Latitude+","+this.Longitude+",15z/";
         }
 
-        public override string ToString(){
+        public string ToString(){
             return this.Name+" (Lat="+this.Latitude+", Long="+this.Longitude+")";
         }
     }

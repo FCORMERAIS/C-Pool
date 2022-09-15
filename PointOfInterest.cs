@@ -21,7 +21,7 @@ namespace CSharpDiscovery.Quest03{
             this.Longitude = longitude;
         }
         public string GetGoogleMapsUrl() {
-            return "https://www.google.com/maps/place/"+this.Name.Replace(" ", "+")+"/@"+this.Latitude+","+this.Longitude;
+            return "https://www.google.com/maps/place/"+this.Name.Replace(" ", "+")+"/@"+this.Latitude+","+this.Longitude+",15z/";
         }
     }
 }

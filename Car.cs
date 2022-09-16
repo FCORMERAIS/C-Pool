@@ -16,5 +16,20 @@ namespace CSharpDiscovery.Quest04 {
         public override string ToString(){
             return this.Color+" "+this.Brand+" "+this.Model;
         }
+
+        public override void Accelerate(int addSpeed) {
+            if (this.CurrentSpeed <180)
+            {
+                this.CurrentSpeed += addSpeed;
+            }
+            if (this.CurrentSpeed > 180) {this.CurrentSpeed = 180;}
+        }
+
+        public override void Brake(int lessSpeed) {
+            if (this.CurrentSpeed> 0) {
+                this.CurrentSpeed -= lessSpeed;
+            }
+            if (this.CurrentSpeed < 0) {this.CurrentSpeed = 0;}
+        }
     }
 }

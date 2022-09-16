@@ -14,7 +14,7 @@ namespace CSharpDiscovery.Quest04 {
         }
 
         public override string ToString() {
-            return this.Color+" " +this.Brand+" "+this.Tonnage+" T Truck";
+            return this.Color+" " +this.Brand+" "+this.Tonnage+"T Truck";
         }
 
         

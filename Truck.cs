@@ -7,7 +7,7 @@ namespace CSharpDiscovery.Quest04 {
         }
         
         public Truck(int tonnage,string Brand,string Color,int CurrentSpeed = 0) : base(Brand,Color,CurrentSpeed) {
-            Tonnage = Tonnage;
+            Tonnage = tonnage;
             Brand =Brand;
             Color = Color;
             CurrentSpeed = CurrentSpeed;

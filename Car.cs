@@ -3,7 +3,7 @@ namespace CSharpDiscovery.Quest04 {
         public string Model {get; set;}
 
         public Car() {
-            Model = "Unknow";
+            Model = "Unknown";
         }
 
         public Car(string model,string Brand,string Color, int CurrentSpeed=0) : base(Brand,Color,CurrentSpeed) {
